@@ -11,7 +11,7 @@ class DateRangeType extends Type
 {
     public const TYPE_NAME = 'daterange';
 
-    public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform)
+    public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform): string
     {
         return static::TYPE_NAME;
     }
